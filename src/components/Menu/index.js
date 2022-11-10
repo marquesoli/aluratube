@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import logotop from "../public/img/logotop.png";
+import Search from "./components/Search";
 
 const StyledMenu = styled.header`
   display: flex;
@@ -25,12 +25,13 @@ const StyledMenu = styled.header`
   }
 `;
 
-export default function Menu() {
+export default function Menu({ valorDoFiltro, setValorDoFiltro }) {
   return (
     <StyledMenu>
       <div>
-        <Logo/>
+        <Logo />
       </div>
+      <Search valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
     </StyledMenu>
   );
 }
