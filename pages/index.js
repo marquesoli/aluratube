@@ -29,7 +29,7 @@ function HomePage() {
             </div>
         </>
     );
-}
+} 
 
 export default HomePage
 
@@ -57,9 +57,9 @@ const StyledHeader = styled.div`
     }
 `;
 const StyledBanner = styled.div`
-    background-color: blue;
-    background-image: url(${({ bg }) => bg});
-    /* background-image: url(${config.bg}); */
+    // background-color: red;
+    /*background-image: url(${({ bg }) => bg});*/
+      background-image: url(${config.bg}); 
     height: 230px;
 `;
 function Header() {
